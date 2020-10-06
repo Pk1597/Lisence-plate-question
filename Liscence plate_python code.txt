@@ -1,0 +1,17 @@
+no_of_district=int(input())
+letter_serial=input().split()
+number_serial=input().split()
+L=[]
+M=[]
+L.append(letter_serial)
+M.append(number_serial)
+a = int(ord(L[0][0]))
+b = int(ord(L[0][1]))
+c = int(M[0][0])
+d = int(M[0][1])
+possible_letter = (b-a+1)**2
+print(possible_letter)
+possible_numbers = (d-c)*6
+print(possible_numbers)
+total_possible = no_of_district*possible_letter*possible_numbers
+print(total_possible)
